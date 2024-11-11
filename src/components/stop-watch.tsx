@@ -97,7 +97,7 @@ Total Time: ${formatTime(time)}
 Number of Laps: ${lapTimes.length}
 Best Lap: ${bestLap ? formatTime(bestLap) : "N/A"}
 Worst Lap: ${worstLap ? formatTime(worstLap) : "N/A"}
-Try it: https://stop-watch_app.vercel.com`
+Try it: https://stop-watch-app-navy.vercel.app/`
 
         try {
             await navigator.share({ text: shareText })
