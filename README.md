@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⏱️ Stopwatch App
 
-## Getting Started
+A modern, interactive stopwatch app built with **Next.js**, **React**, **TypeScript**, **Tailwind CSS**, and **ShadCN UI Kit**. The stopwatch allows users to track elapsed time, record lap times, view their best and worst laps, and share their results. It includes smooth animations for laps using **Framer Motion** and a **dark mode** toggle for a visually customizable experience.
 
-First, run the development server:
+![Stopwatch App Screenshot](./screenshots/light-mode.png) 
+---
+
+## 📋 Table of Contents
+
+- [⏱️ Stopwatch App](#️-stopwatch-app)
+  - [](#)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [✨ Features](#-features)
+  - [🛠️ Tech Stack](#️-tech-stack)
+  - [🚀 Getting Started](#-getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [🎮 How to Use](#-how-to-use)
+    - [Dark Mode](#dark-mode)
+    - [Screenshots](#screenshots)
+
+---
+
+## ✨ Features
+
+- **Start, Stop, and Reset**: Easily control the stopwatch to start, pause, or reset the timer.
+- **Lap Tracking**: Record lap times and see each lap’s elapsed time.
+- **Best and Worst Laps**: Highlights best and worst laps for quick insights.
+- **Dark Mode Toggle**: Switch between light and dark themes for a comfortable viewing experience.
+- **Animated Laps**: Smooth animations when laps are added or removed using Framer Motion.
+- **Share Results**: Share total time, best lap, and worst lap with others using the Web Share API (on supported devices).
+- **Responsive Design**: Built with Tailwind CSS, ensuring optimal display on any device.
+
+---
+
+## 🛠️ Tech Stack
+
+- **[Next.js](https://nextjs.org/)** - A modern React framework for optimized web applications
+- **[React](https://reactjs.org/)** - A JavaScript library for building interactive UIs
+- **[TypeScript](https://www.typescriptlang.org/)** - A typed superset of JavaScript for scalable and maintainable code
+- **[Tailwind CSS](https://tailwindcss.com/)** - A utility-first CSS framework for rapid styling
+- **[ShadCN UI Kit](https://shadcn.dev/)** - A customizable UI component library for consistent design
+- **[Framer Motion](https://www.framer.com/motion/)** - A React animation library for smooth transitions and effects
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure you have Node.js and npm installed:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Node.js
+https://nodejs.org/
+
+# Check Node.js version
+node -v
+
+# Check npm version
+npm -v
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the Repository**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone https://github.com/your-username/stopwatch-app.git
+   cd stopwatch-app
+   ```
 
-## Learn More
+2. **Install Dependencies**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Run the Application**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+   The application will be available at `http://localhost:3000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎮 How to Use
+
+1. **Start/Stop the Stopwatch**: Click the play button to start the timer and the pause button to stop it.
+2. **Record Lap Times**: Click the flag button while the timer is running to record the current lap time.
+3. **Reset Stopwatch**: Click the reset button to clear the timer and lap records.
+4. **Dark Mode Toggle**: Toggle between light and dark mode for a personalized experience.
+5. **View Best and Worst Laps**: The best and worst laps are highlighted in green and red respectively.
+6. **Share Results**: Use the share button to share your results, including the best and worst laps, with others.
+
+### Dark Mode
+
+To toggle dark mode, a `dark` class is applied to the root `<div>`. Text colors and backgrounds are adjusted based on the current mode.
+
+### Screenshots
+
+- **Light Mode**
+
+  ![Light Mode Screenshot](./screenshots/light-mode.png) 
+- **Dark Mode**
+
+  ![Dark Mode Screenshot](./screenshots/dark-mode.png) 
