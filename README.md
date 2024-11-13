@@ -66,7 +66,7 @@ npm -v
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/stopwatch-app.git
+   git clone https://github.com/Sheikh-Muhammad-Mujtaba/stop-watch_app.git
    cd stopwatch-app
    ```
 
